@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+:root {
+  --orange: #e05a1c;
+  --orange-dark: #b84615;
+  --orange-light: #f97316;
+  --navy: #1a2744;
+  --navy-light: #243056;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  color: #1a1a1a;
+}
+
+.btn-primary {
+  background: var(--orange);
+  color: white;
+  padding: 12px 28px;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: background 0.2s;
+  display: inline-block;
+}
+.btn-primary:hover { background: var(--orange-dark); }
+
+.btn-outline {
+  border: 2px solid white;
+  color: white;
+  padding: 10px 28px;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: all 0.2s;
+  display: inline-block;
+}
+.btn-outline:hover { background: white; color: var(--navy); }
+
+.section-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 0.5rem;
+}
+
+.section-sub {
+  color: #666;
+  font-size: 1.05rem;
+  margin-bottom: 2.5rem;
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 28px rgba(0,0,0,0.13);
+}
