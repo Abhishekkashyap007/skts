@@ -28,12 +28,12 @@ export default function About() {
         <div style={{ maxWidth: 1100, margin: '0 auto', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: 48, alignItems: 'center' }}>
           <div>
             <div style={{ background: '#e05a1c', display: 'inline-block', padding: '4px 14px', borderRadius: 20, fontSize: '0.8rem', fontWeight: 700, color: 'white', marginBottom: 14 }}>
-              EST. 29 OCTOBER 2023
+              TRUSTED SINCE 2005
             </div>
             <h2 style={{ fontSize: '1.9rem', fontWeight: 800, color: '#1a2744', marginBottom: 16 }}>Shri Khatu Shyam Transport Company</h2>
-            <p style={{ color: '#555', lineHeight: 1.8, marginBottom: 14 }}>
-              Shri Khatu Shyam Transport Company is a trusted and growing transportation service provider established on 29 October 2023 by <strong>Mr. Satendra Verma</strong>. Based in Noida, Uttar Pradesh, the company is dedicated to providing safe, reliable, and cost-effective transportation solutions across India.
-            </p>
+           <p style={{ color: '#555', lineHeight: 1.8, marginBottom: 14 }}>
+  Shri Khatu Shyam Transport Company is a trusted and growing transportation service provider with <strong>over 15+ years of experience</strong> in the transport industry. Founded by <strong>Mr. Satendra Verma</strong>, who has been working in this field since 2005, the company was formally established on 29 October 2023 in Noida, Uttar Pradesh. We are dedicated to providing safe, reliable, and cost-effective transportation solutions across India.
+</p>
             <p style={{ color: '#555', lineHeight: 1.8, marginBottom: 14 }}>
               The company specializes in road freight transportation, offering efficient logistics services for industrial goods, commercial cargo, machinery, construction materials, and other products. With a strong commitment to customer satisfaction, we ensure timely deliveries while maintaining the highest standards of safety and professionalism.
             </p>

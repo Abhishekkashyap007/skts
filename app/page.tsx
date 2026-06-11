@@ -3,7 +3,7 @@ import Link from 'next/link';
 import HeroCarousel from '@/components/HeroCarousel';
 
 const stats = [
-  { num: '2+', label: 'Years Experience' },
+  { num: '15+', label: 'Years Experience' },
   { num: '500+', label: 'Deliveries Done' },
   { num: '24/7', label: 'Service Available' },
   { num: '100%', label: 'All India Permit' },
@@ -120,7 +120,7 @@ export default function Home() {
       <section style={{ padding: '56px 20px', background: '#f5f6fa' }}>
         <div style={{ maxWidth: 1200, margin: '0 auto' }}>
           <div style={{ textAlign: 'center', marginBottom: 32 }}>
-            <h2 className="section-title">Our Fleet</h2>
+            <h2 className="section-title">Our Trucks</h2>
             <p className="section-sub">Modern Eicher trucks — well-maintained, All India Permit</p>
           </div>
           <div className="fleet-grid">
@@ -133,7 +133,7 @@ export default function Home() {
           </div>
           <div style={{ textAlign: 'center', marginTop: 28 }}>
             <Link href="/fleet" style={{ background: '#e05a1c', color: 'white', padding: '12px 28px', borderRadius: 8, fontWeight: 700, textDecoration: 'none' }}>
-              See Full Fleet
+              See Full Truck Fleet
             </Link>
           </div>
         </div>

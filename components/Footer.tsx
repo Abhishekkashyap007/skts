@@ -26,7 +26,7 @@ export default function Footer() {
               { href: '/', label: 'Home' },
               { href: '/about', label: 'About Us' },
               { href: '/services', label: 'Our Services' },
-              { href: '/fleet', label: 'Our Fleet' },
+              { href: '/fleet', label: 'Our Trucks' },
               { href: '/contact', label: 'Contact Us' },
               { href: '/quote', label: 'Get a Quote' },
             ].map(l => (
