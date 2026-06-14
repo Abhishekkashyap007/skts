@@ -12,8 +12,8 @@ export default function Quote() {
   };
 
   const handleWhatsApp = () => {
-    const msg = `Hello! I need a transport quote.\n\nName: ${form.name}\nPhone: ${form.phone}\nFrom: ${form.from}\nTo: ${form.to}\nService: ${form.service}\nWeight: ${form.weight}\nDate: ${form.date}\nNotes: ${form.notes}`;
-    window.open(`https://wa.me/919410461549?text=${encodeURIComponent(msg)}`, '_blank');
+    const msg = `Hello! I need a transport service.\n\nName: ${form.name}\nPhone: ${form.phone}\nFrom: ${form.from}\nTo: ${form.to}\nService: ${form.service}\nWeight: ${form.weight}\nDate: ${form.date}\nNotes: ${form.notes}`;
+    window.open(`https://wa.me/917088597179?text=${encodeURIComponent(msg)}`, '_blank');
   };
 
   const inputStyle: React.CSSProperties = { width: '100%', padding: '11px 14px', border: '1.5px solid #ddd', borderRadius: 8, fontSize: '0.95rem', outline: 'none', boxSizing: 'border-box', background: '#fafafa' };
