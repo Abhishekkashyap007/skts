@@ -303,7 +303,6 @@ export default function ReviewSection() {
             >
               <option value="">Select Service</option>
               <option value="Full Truck Load (FTL)">Full Truck Load (FTL)</option>
-              <option value="Part Load (LTL)">Part Load (LTL)</option>
               <option value="Door-to-Door">Door-to-Door Delivery</option>
               <option value="Express Delivery">Express Delivery</option>
               <option value="Industrial Goods">Industrial Goods</option>

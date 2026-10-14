@@ -11,17 +11,12 @@ const services = [
     desc: "Exclusive full truck for large shipments. Maximum security and fastest delivery across India.",
   },
   {
-    icon: "📦",
-    title: "Part Load (LTL)",
-    desc: "Share truck space for smaller loads. Cost-effective solution with the same reliability.",
-  },
-  {
     icon: "🏠",
     title: "Door-to-Door Delivery",
     desc: "We pick up from your location and deliver directly to the destination.",
   },
   {
-    icon: "🏭",
+    icon: "",
     title: "Industrial Goods",
     desc: "Safe transportation for machinery, construction materials, and heavy industrial cargo.",
   },
@@ -31,7 +26,7 @@ const services = [
     desc: "Urgent shipment? Our express service ensures your goods reach faster.",
   },
   {
-    icon: "🗺️",
+    icon: "️",
     title: "All India Network",
     desc: "Strong transport network covering all major cities and states across India.",
   },
@@ -47,6 +42,68 @@ export default function Home() {
         .why-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center; }
         .stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; text-align: center; }
         .cta-btns { display: flex; gap: 12px; flex-wrap: wrap; }
+
+        /* Info Box Styles */
+        .info-box {
+          background: rgba(255, 255, 255, 0.08);
+          backdrop-filter: blur(10px);
+          -webkit-backdrop-filter: blur(10px);
+          border-radius: 14px;
+          padding: 22px 26px;
+          margin-bottom: 24px;
+          border: 1px solid rgba(255, 255, 255, 0.15);
+          border-left: 5px solid #e05a1c;
+          box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        }
+        .info-box-row {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          margin-bottom: 14px;
+          flex-wrap: wrap;
+        }
+        .info-box-row:last-child {
+          margin-bottom: 0;
+        }
+        .service-badge {
+          background: #e05a1c;
+          color: white;
+          padding: 5px 14px;
+          border-radius: 20px;
+          font-size: 0.75rem;
+          font-weight: 700;
+          letter-spacing: 1;
+          white-space: nowrap;
+        }
+        .service-area-text {
+          color: white;
+          font-size: 1.05rem;
+          font-weight: 700;
+          letter-spacing: 0.5;
+        }
+        .office-row {
+          display: flex;
+          gap: 10px;
+          align-items: flex-start;
+        }
+        .office-pin {
+          font-size: 1.2rem;
+          flex-shrink: 0;
+          line-height: 1;
+        }
+        .office-label {
+          color: #fbbf24;
+          font-size: 0.78rem;
+          font-weight: 700;
+          letter-spacing: 1.5;
+          margin-bottom: 4px;
+        }
+        .office-address {
+          color: #d0d8f0;
+          font-size: 0.92rem;
+          line-height: 1.6;
+        }
+
         @media (max-width: 768px) {
           .hero-grid { grid-template-columns: 1fr; gap: 24px; }
           .services-grid { grid-template-columns: 1fr; gap: 14px; }
@@ -56,6 +113,50 @@ export default function Home() {
           .cta-btns { flex-direction: column; }
           .cta-btns a { text-align: center; }
           .why-img { display: none; }
+
+          /* Info Box Mobile Responsive */
+          .info-box {
+            padding: 16px 18px;
+            border-left-width: 4px;
+          }
+          .info-box-row {
+            gap: 8px;
+            margin-bottom: 12px;
+          }
+          .service-badge {
+            font-size: 0.7rem;
+            padding: 4px 10px;
+          }
+          .service-area-text {
+            font-size: 0.95rem;
+            font-weight: 600;
+          }
+          .office-row {
+            gap: 8px;
+          }
+          .office-pin {
+            font-size: 1rem;
+          }
+          .office-label {
+            font-size: 0.72rem;
+            letter-spacing: 1;
+          }
+          .office-address {
+            font-size: 0.85rem;
+            line-height: 1.5;
+          }
+        }
+
+        @media (max-width: 480px) {
+          .info-box {
+            padding: 14px 14px;
+          }
+          .service-area-text {
+            font-size: 0.88rem;
+          }
+          .office-address {
+            font-size: 0.82rem;
+          }
         }
       `}</style>
 
@@ -97,17 +198,31 @@ export default function Home() {
                 <br />
                 <span style={{ color: "#e05a1c" }}>Transport Co.</span>
               </h1>
-              <p
-                style={{
-                  fontSize: "1rem",
-                  lineHeight: 1.7,
-                  color: "#c0cde8",
-                  marginBottom: 24,
-                }}
-              >
-                Your trusted road freight partner for safe, reliable, and
-                cost-effective transportation across India. Available 24×7.
-              </p>
+
+              {/* ✅ Responsive Info Box */}
+              <div className="info-box">
+                {/* Working Area */}
+                <div className="info-box-row">
+                  <span className="service-badge">🚛 SERVICE AREA</span>
+                  <span className="service-area-text">
+                    DELHI NCR • NOIDA • UTTAR PRADESH
+                  </span>
+                </div>
+
+                {/* Head Office */}
+                <div className="office-row">
+                  <span className="office-pin">📌</span>
+                  <div>
+                    <div className="office-label">MAIN HEAD OFFICE</div>
+                    <div className="office-address">
+                      A-239, IInd Floor, T.P. Nagar, Sector-69,
+                      <br />
+                      Gautam Budh Nagar, Noida, U.P. — 201307
+                    </div>
+                  </div>
+                </div>
+              </div>
+
               <div className="cta-btns">
                 <Link
                   href="/quote"
@@ -141,7 +256,7 @@ export default function Home() {
               <div
                 style={{ marginTop: 20, fontSize: "0.88rem", color: "#8898bb" }}
               >
-                ✓ Full Load &nbsp; ✓ Part Load &nbsp; ✓ Door-to-Door &nbsp; ✓
+                ✓ Full Load &nbsp; ✓ Door-to-Door &nbsp; ✓
                 24×7
               </div>
             </div>
@@ -295,7 +410,7 @@ export default function Home() {
                 "✓ Safe & Secured Transportation",
                 "✓ Competitive & Transparent Pricing",
                 "✓ Timely Delivery Guaranteed",
-                "✓ Full Load & Part Load Both Available",
+                "✓ Full Load Available",
               ].map((p) => (
                 <div
                   key={p}
@@ -344,7 +459,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* TESTIMONIALS - Updated with Star Ratings */}
+      {/* TESTIMONIALS */}
       <section style={{ padding: "56px 20px", background: "white" }}>
         <div style={{ maxWidth: 1200, margin: "0 auto", textAlign: "center" }}>
           <h2 className="section-title">What Our Clients Say</h2>
